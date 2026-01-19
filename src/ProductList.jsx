@@ -312,7 +312,7 @@ function ProductList({ onHomeClick }) {
           <div className="product-title">{plant.name}</div> {/* Display plant name */}
           {/* Display other plant details like description and cost */}
           <div className="product-description">{plant.description}</div> {/* Display plant description */}
-          <div className="product-cost">${plant.cost}</div> {/* Display plant cost */}
+          <div className="product-cost">{plant.cost}</div> {/* Display plant cost */}
           {Object.keys(addedToCart).includes(plant.name) ?
           <button
             className="product-button"
